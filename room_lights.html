@@ -1,0 +1,21 @@
+<DOCTYPE! HTML>
+<head>
+	<title>ROOM LIGHT HTML</title>
+</head>
+<html>
+<body>
+	<script>
+		window.setTimeout( function() {
+		window.location.reload();
+		}, 1000);
+	</script>
+
+	{% if (status) == 0 %}
+    <p>If there is no one in the room</p>
+    <img src="off.png">
+    {% if (status) == 1 %}
+    <p>If there is someone in the room</p>
+    <img src="on.png">
+
+</body>
+</html>
